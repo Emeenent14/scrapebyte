@@ -14,6 +14,7 @@ if response.status_code == 200:
 
     # Step 5: Find specific elements (e.g., all <h2> tags for article titles)
     titles = soup.find_all("h2")
+    lines = soup.find_all("p")
 
     # Step 6: Print the extracted titles
     for title in titles:
